@@ -7,4 +7,4 @@
 3. JavaScript
 
 # DEMO 
-[demo]( )
+[demo](https://elenakorostiy.github.io/Calculator/)
