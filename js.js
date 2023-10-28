@@ -30,6 +30,11 @@ function calculate(button) {
         }
     } else {
         if (!isNaN(value) || value === "+" || value === "-" || value === "*" || value === "/" || (value === "." && !accumulativeCalculation.endsWith("."))) {
+            
+            if (calculation.length === 1 && calculation[0] === "0" && !isNaN(value)) {
+              calculation.shift() 
+            }
+            
             calculation.push(value);
             accumulativeCalculation = calculation.join('');
             screenDisplay.textContent = accumulativeCalculation;
